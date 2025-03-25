@@ -39,7 +39,13 @@ app.get("/", async (req, res) => {
     res.render("index", { featuredGames });
 });
 
-// displays on the console if the server is running
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server is running on port ${PORT}`);
+// });
+
+module.exports = app
+
+
+
+// npm start
+// npx jest
